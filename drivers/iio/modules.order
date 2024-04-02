@@ -1,0 +1,11 @@
+kernel/drivers/iio/accel/hid-sensor-accel-3d.ko
+kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko
+kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko
+kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko
+kernel/drivers/iio/gyro/hid-sensor-gyro-3d.ko
+kernel/drivers/iio/light/hid-sensor-als.ko
+kernel/drivers/iio/light/hid-sensor-prox.ko
+kernel/drivers/iio/magnetometer/hid-sensor-magn-3d.ko
+kernel/drivers/iio/orientation/hid-sensor-incl-3d.ko
+kernel/drivers/iio/orientation/hid-sensor-rotation.ko
+kernel/drivers/iio/pressure/hid-sensor-press.ko

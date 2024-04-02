@@ -1,0 +1,2 @@
+kernel/drivers/dma/dw/dw_dmac.ko
+kernel/drivers/dma/ioat/ioatdma.ko

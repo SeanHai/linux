@@ -1,0 +1,9 @@
+kernel/drivers/tty/serial/jsm/jsm.ko
+kernel/drivers/tty/serial/arc_uart.ko
+kernel/drivers/tty/n_hdlc.ko
+kernel/drivers/tty/n_gsm.ko
+kernel/drivers/tty/cyclades.ko
+kernel/drivers/tty/nozomi.ko
+kernel/drivers/tty/synclink_gt.ko
+kernel/drivers/tty/synclinkmp.ko
+kernel/drivers/tty/synclink.ko

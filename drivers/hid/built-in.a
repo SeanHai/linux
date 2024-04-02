@@ -1,0 +1,72 @@
+!<thin>
+//                                              664       `
+hid-core.o/
+hid-input.o/
+hid-quirks.o/
+hid-debug.o/
+hidraw.o/
+hid-generic.o/
+hid-a4tech.o/
+hid-apple.o/
+hid-belkin.o/
+hid-cherry.o/
+hid-chicony.o/
+hid-cypress.o/
+hid-ezkey.o/
+hid-ite.o/
+hid-kensington.o/
+hid-lg.o/
+hid-magicmouse.o/
+hid-microsoft.o/
+hid-monterey.o/
+hid-ntrig.o/
+hid-plantronics.o/
+hid-redragon.o/
+usbhid/hid-core.o/
+usbhid/hiddev.o/
+usbhid/hid-pidff.o/
+intel-ish-hid/ishtp/init.o/
+intel-ish-hid/ishtp/hbm.o/
+intel-ish-hid/ishtp/client.o/
+intel-ish-hid/ishtp/bus.o/
+intel-ish-hid/ishtp/dma-if.o/
+intel-ish-hid/ishtp/client-buffers.o/
+intel-ish-hid/ipc/ipc.o/
+intel-ish-hid/ipc/pci-ish.o/
+intel-ish-hid/ishtp-hid.o/
+intel-ish-hid/ishtp-hid-client.o/
+/0              0           0     0     644     464960    `
+/12             0           0     0     644     515816    `
+/25             0           0     0     644     253616    `
+/39             0           0     0     644     344792    `
+/52             0           0     0     644     310984    `
+/62             0           0     0     644     228528    `
+/77             0           0     0     644     232832    `
+/91             0           0     0     644     251328    `
+/104            0           0     0     644     230704    `
+/118            0           0     0     644     228824    `
+/132            0           0     0     644     245976    `
+/147            0           0     0     644     232928    `
+/162            0           0     0     644     228024    `
+/175            0           0     0     644     225600    `
+/186            0           0     0     644     225864    `
+/204            0           0     0     644     302392    `
+/214            0           0     0     644     274608    `
+/232           /0           0     0     644     249744    `
+/249            0           0     0     644     229464    `
+/265            0           0     0     644     312192    `
+/278            0           0     0     644     238520    `
+/297            0           0     0     644     228192    `
+/313            0           0     0     644     469816    `
+/332            0           0     0     644     329632    `
+/349            0           0     0     644     331824    `
+/369            0           0     0     644     154280    `
+/397            0           0     0     644     210960    `
+/424            0           0     0     644     309976    `
+/454            0           0     0     644     240392    `
+/481            0           0     0     644     211872    `
+/511            0           0     0     644     174840    `
+/549            0           0     0     644     294720    `
+/574            0           0     0     644     355360    `
+/603            0           0     0     644     237448    `
+/630            0           0     0     644     316288    `

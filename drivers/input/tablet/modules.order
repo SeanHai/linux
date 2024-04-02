@@ -1,0 +1,4 @@
+kernel/drivers/input/tablet/acecad.ko
+kernel/drivers/input/tablet/aiptek.ko
+kernel/drivers/input/tablet/gtco.ko
+kernel/drivers/input/tablet/kbtab.ko

@@ -1,0 +1,191 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+MODULE_INFO(staging, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0xe6af07fa, "module_layout" },
+	{ 0xef71ec30, "HT_update_self_and_peer_setting" },
+	{ 0xd714a81d, "rtllib_wx_set_rawtx" },
+	{ 0x2d3385d3, "system_wq" },
+	{ 0x5eba9410, "__request_region" },
+	{ 0x38a7735c, "netdev_info" },
+	{ 0xd7c584a, "pci_write_config_dword" },
+	{ 0xf9a482f9, "msleep" },
+	{ 0xda56fa07, "rtllib_start_scan_syncro" },
+	{ 0xcdd58a4e, "param_ops_int" },
+	{ 0x8e82828e, "iomem_resource" },
+	{ 0x754d539c, "strlen" },
+	{ 0xdd5c21c, "pci_read_config_byte" },
+	{ 0x317a2893, "rtllib_stop_scan_syncro" },
+	{ 0xa54c0ba0, "dma_set_mask" },
+	{ 0x40be48ac, "rtllib_wx_set_auth" },
+	{ 0x52a48622, "rtllib_wx_set_mlme" },
+	{ 0xff00dd86, "rtllib_wx_get_essid" },
+	{ 0xdfb2ae49, "pci_disable_device" },
+	{ 0x79cc18b, "rtllib_ps_tx_ack" },
+	{ 0xf0c8e802, "netif_carrier_on" },
+	{ 0x33104061, "rtllib_wx_set_power" },
+	{ 0xc1c794e, "delayed_work_timer_fn" },
+	{ 0x3a687f07, "dot11d_init" },
+	{ 0xecfaa3be, "rtllib_wx_set_rate" },
+	{ 0x4388bd04, "netif_carrier_off" },
+	{ 0x81b1b255, "cancel_work_sync" },
+	{ 0xc29957c3, "__x86_indirect_thunk_rcx" },
+	{ 0x3288792d, "pci_write_config_byte" },
+	{ 0x2c6493cd, "rtllib_wx_get_encode" },
+	{ 0xe6672d2b, "__dev_kfree_skb_any" },
+	{ 0xeae3dfd6, "__const_udelay" },
+	{ 0x4cc8f9c8, "init_timer_key" },
+	{ 0x68f927fb, "cancel_delayed_work_sync" },
+	{ 0xa6093a32, "mutex_unlock" },
+	{ 0xf062ac06, "pci_enable_wake" },
+	{ 0x6f36d38c, "rtllib_sta_ps_send_null_frame" },
+	{ 0x22166084, "rt_global_debug_component" },
+	{ 0x999e8297, "vfree" },
+	{ 0xeddfd55a, "dma_free_attrs" },
+	{ 0x97651e6c, "vmemmap_base" },
+	{ 0xe4bf7f13, "dma_set_coherent_mask" },
+	{ 0xae1b8f3d, "rtllib_wx_set_wap" },
+	{ 0x15ba50a6, "jiffies" },
+	{ 0x4bea39f, "__dynamic_netdev_dbg" },
+	{ 0x5b5a9263, "skb_trim" },
+	{ 0x3d699253, "rtllib_DisableIntelPromiscuousMode" },
+	{ 0xd73294f3, "rtllib_wx_set_scan" },
+	{ 0x7db9fd3a, "__netdev_alloc_skb" },
+	{ 0xd01f3f3b, "rtllib_wx_get_freq" },
+	{ 0xcdf13af1, "rtllib_xmit" },
+	{ 0x33055a79, "rtllib_wx_get_wap" },
+	{ 0x103b0514, "param_ops_charp" },
+	{ 0x50fe27c8, "pci_set_master" },
+	{ 0xec02a35f, "del_timer_sync" },
+	{ 0xf71e8617, "skb_queue_purge" },
+	{ 0x51bc7125, "rtllib_wx_get_power" },
+	{ 0x65968430, "rtllib_wx_get_name" },
+	{ 0xa133a467, "rtllib_wx_set_freq" },
+	{ 0xb5a8d234, "cancel_delayed_work" },
+	{ 0x27776184, "netif_tx_wake_queue" },
+	{ 0x56898d73, "pci_restore_state" },
+	{ 0x9dd638e2, "rtllib_wx_get_rate" },
+	{ 0xf9c388e5, "dev_err" },
+	{ 0x3812050a, "_raw_spin_unlock_irqrestore" },
+	{ 0x9a76f11f, "__mutex_init" },
+	{ 0x27e1a049, "printk" },
+	{ 0x4c9d28b0, "phys_base" },
+	{ 0x9dacecc2, "rtllib_wx_set_essid" },
+	{ 0xfaef0ed, "__tasklet_schedule" },
+	{ 0xdce6588d, "register_netdev" },
+	{ 0xf33f3525, "pci_read_config_word" },
+	{ 0x1aa6f7d9, "dma_direct_map_page" },
+	{ 0x5792f848, "strlcpy" },
+	{ 0x80d50279, "dma_alloc_attrs" },
+	{ 0x5def83f9, "skb_push" },
+	{ 0x41aed6e7, "mutex_lock" },
+	{ 0x849986e8, "rtllib_wx_set_mode" },
+	{ 0x9545af6d, "tasklet_init" },
+	{ 0xa7eedcc4, "call_usermodehelper" },
+	{ 0x28985b9f, "mod_timer" },
+	{ 0x318f7969, "add_timer" },
+	{ 0x5db7ba75, "rtllib_wx_set_encode" },
+	{ 0xd6b8e852, "request_threaded_irq" },
+	{ 0x2bf43b9c, "rtllib_act_scanning" },
+	{ 0xd05decf, "rtllib_stop_send_beacons" },
+	{ 0x461886d6, "rtllib_wx_set_rts" },
+	{ 0xdb065392, "rtllib_wx_get_rts" },
+	{ 0x7cd8d75e, "page_offset_base" },
+	{ 0x6b694c3d, "rtllib_legal_channel" },
+	{ 0xea4805c2, "skb_queue_tail" },
+	{ 0xd0edfd15, "dma_direct_unmap_page" },
+	{ 0xc3946e2d, "netif_device_attach" },
+	{ 0xe6478472, "_dev_info" },
+	{ 0x40a9b349, "vzalloc" },
+	{ 0xb601be4c, "__x86_indirect_thunk_rdx" },
+	{ 0x4bb012cf, "netif_device_detach" },
+	{ 0x93a219c, "ioremap_nocache" },
+	{ 0xca6e8079, "RemovePeerTS" },
+	{ 0xf5b51db4, "rtllib_wx_get_mode" },
+	{ 0xd1e4ec46, "queue_delayed_work_on" },
+	{ 0xdb7305a1, "__stack_chk_fail" },
+	{ 0xc5c92ee, "kfree_skb" },
+	{ 0x2ea2c95c, "__x86_indirect_thunk_rax" },
+	{ 0xe1f4fcf5, "pci_read_config_dword" },
+	{ 0x6f87408, "rtllib_rx" },
+	{ 0x2cee75bc, "alloc_rtllib" },
+	{ 0xdf78f620, "rtllib_wlan_frequencies" },
+	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0xb6df8e55, "netdev_err" },
+	{ 0xe45c1b14, "__release_region" },
+	{ 0xc749fd1c, "pci_unregister_driver" },
+	{ 0xbda0603e, "rtllib_reset_queue" },
+	{ 0x51760917, "_raw_spin_lock_irqsave" },
+	{ 0x20f5048a, "pci_set_power_state" },
+	{ 0xbfef472c, "netdev_warn" },
+	{ 0x372e8e21, "eth_validate_addr" },
+	{ 0x99e0c364, "rtllib_MgntDisconnect" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x97fdc536, "Dot11d_Channelmap" },
+	{ 0x69acdf38, "memcpy" },
+	{ 0x7c054228, "dev_alloc_name" },
+	{ 0xde793b73, "rtllib_softmac_start_protocol" },
+	{ 0x31335fc8, "rtllib_wx_set_encode_ext" },
+	{ 0x99f7c519, "rtllib_stop_scan" },
+	{ 0xedc03953, "iounmap" },
+	{ 0x4d02a77, "rtllib_get_beacon" },
+	{ 0x66ab889a, "rtllib_softmac_stop_protocol" },
+	{ 0x6e524bb0, "__pci_register_driver" },
+	{ 0xf82eea4a, "request_firmware" },
+	{ 0x488a0ef1, "skb_dequeue" },
+	{ 0x93f0703, "unregister_netdev" },
+	{ 0x121da905, "queue_work_on" },
+	{ 0x28318305, "snprintf" },
+	{ 0xee7915ff, "pci_choose_state" },
+	{ 0x7f02188f, "__msecs_to_jiffies" },
+	{ 0xeb4b9a49, "skb_put" },
+	{ 0x1d29dff0, "pci_enable_device" },
+	{ 0x362ef408, "_copy_from_user" },
+	{ 0xa221d5fc, "rtllib_wx_set_gen_ie" },
+	{ 0x84277b2a, "release_firmware" },
+	{ 0x36b3d463, "dma_ops" },
+	{ 0xf6e09477, "pcie_capability_read_word" },
+	{ 0xd2b53e81, "notify_wx_assoc_event" },
+	{ 0xa61e0faf, "rtllib_wx_get_scan" },
+	{ 0xc1514a3b, "free_irq" },
+	{ 0x93527c4c, "pci_save_state" },
+	{ 0x33fff56a, "rtllib_start_send_beacons" },
+	{ 0xa16186d5, "rtllib_EnableIntelPromiscuousMode" },
+	{ 0x82b75dde, "free_rtllib" },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=rtllib";
+
+MODULE_ALIAS("pci:v000010ECd00008192sv*sd*bc*sc*i*");
+MODULE_ALIAS("pci:v000007AAd00000044sv*sd*bc*sc*i*");
+MODULE_ALIAS("pci:v000007AAd00000047sv*sd*bc*sc*i*");
+
+MODULE_INFO(srcversion, "DCEA37B6F6576B35F357814");
+MODULE_INFO(rhelversion, "8.0");

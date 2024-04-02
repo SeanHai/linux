@@ -1,0 +1,2 @@
+kernel/drivers/misc/mei/mei.ko
+kernel/drivers/misc/mei/mei-me.ko

@@ -1,0 +1,2 @@
+kernel/drivers/iio/light/hid-sensor-als.ko
+kernel/drivers/iio/light/hid-sensor-prox.ko

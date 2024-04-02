@@ -1,0 +1,23 @@
+!<thin>
+//                                              200       `
+cpufreq.o/
+freq_table.o/
+cpufreq_performance.o/
+cpufreq_powersave.o/
+cpufreq_userspace.o/
+cpufreq_ondemand.o/
+cpufreq_conservative.o/
+cpufreq_governor.o/
+cpufreq_governor_attr_set.o/
+intel_pstate.o/
+
+/0              0           0     0     644     729672    `
+/11             0           0     0     644     156992    `
+/25             0           0     0     644     118456    `
+/48             0           0     0     644     118104    `
+/69             0           0     0     644     134880    `
+/90             0           0     0     644     251584    `
+/110            0           0     0     644     183736    `
+/134            0           0     0     644     222088    `
+/154            0           0     0     644     161888    `
+/183            0           0     0     644     589400    `

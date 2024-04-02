@@ -1,0 +1,96 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0xe6af07fa, "module_layout" },
+	{ 0xcdd58a4e, "param_ops_int" },
+	{ 0x975eb5b8, "param_ops_short" },
+	{ 0x6dc87645, "param_array_ops" },
+	{ 0xe3598ce1, "em28xx_unregister_extension" },
+	{ 0x338b1fd9, "em28xx_register_extension" },
+	{ 0x19e92411, "dvb_dmx_swfilter" },
+	{ 0x721f7cc7, "em28xx_free_device" },
+	{ 0xcf5ab5e1, "dvb_net_release" },
+	{ 0x7dc55413, "em28xx_uninit_usb_xfer" },
+	{ 0x37a0cba, "kfree" },
+	{ 0xb348a850, "ex_handler_refcount" },
+	{ 0x7fc8652c, "em28xx_tuner_callback" },
+	{ 0xb601be4c, "__x86_indirect_thunk_rdx" },
+	{ 0xf792cc6f, "em28xx_alloc_urbs" },
+	{ 0xce935186, "kmem_cache_alloc_trace" },
+	{ 0x31ee12ea, "kmalloc_caches" },
+	{ 0x27e1a049, "printk" },
+	{ 0x6e9dd606, "__symbol_put" },
+	{ 0x402b8281, "__request_module" },
+	{ 0x868784cb, "__symbol_get" },
+	{ 0x2a57fcca, "em28xx_setup_xc3028" },
+	{ 0x88260da4, "dvb_dmx_release" },
+	{ 0x8c9697b3, "dvb_dmxdev_release" },
+	{ 0x93eacf30, "dvb_unregister_adapter" },
+	{ 0xb06ee9f4, "dvb_frontend_detach" },
+	{ 0xf9a3fce5, "dvb_unregister_frontend" },
+	{ 0xd7258a3c, "dev_warn" },
+	{ 0xc0705353, "dvb_net_init" },
+	{ 0x6a404590, "dvb_dmxdev_init" },
+	{ 0x77352286, "dvb_dmx_init" },
+	{ 0x14956fe4, "dvb_register_frontend" },
+	{ 0x68a80d60, "dvb_register_adapter" },
+	{ 0x9a76f11f, "__mutex_init" },
+	{ 0xe637fa94, "dev_printk" },
+	{ 0xdf5c5341, "em28xx_init_usb_xfer" },
+	{ 0x9ad53cf8, "usb_set_interface" },
+	{ 0x2b7d8b68, "dvb_frontend_suspend" },
+	{ 0xa85d9b2, "dvb_frontend_resume" },
+	{ 0xe6478472, "_dev_info" },
+	{ 0x45c4953e, "em28xx_stop_urbs" },
+	{ 0xa6093a32, "mutex_unlock" },
+	{ 0x41aed6e7, "mutex_lock" },
+	{ 0x35368810, "em28xx_write_reg_bits" },
+	{ 0xf9a482f9, "msleep" },
+	{ 0x67c6a5ce, "i2c_transfer_buffer_flags" },
+	{ 0x333bc724, "em28xx_write_reg" },
+	{ 0xe0c949d0, "em28xx_gpio_set" },
+	{ 0x12a38747, "usleep_range" },
+	{ 0x6626afca, "down" },
+	{ 0xcf2a6966, "up" },
+	{ 0xdb7305a1, "__stack_chk_fail" },
+	{ 0xe1887eed, "dvb_module_release" },
+	{ 0x2ea2c95c, "__x86_indirect_thunk_rax" },
+	{ 0x88f31ace, "dvb_module_probe" },
+	{ 0xfe990052, "gpio_free" },
+	{ 0xf9c388e5, "dev_err" },
+	{ 0x403f9529, "gpio_request_one" },
+	{ 0x754da70f, "em28xx_set_mode" },
+	{ 0xbdfb6dbb, "__fentry__" },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=em28xx,dvb-core";
+
+
+MODULE_INFO(srcversion, "763663EEB90800161005BC6");
+MODULE_INFO(rhelversion, "8.0");

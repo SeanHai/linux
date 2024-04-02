@@ -1,0 +1,2 @@
+kernel/drivers/input/rmi4/rmi_core.ko
+kernel/drivers/input/rmi4/rmi_smbus.ko

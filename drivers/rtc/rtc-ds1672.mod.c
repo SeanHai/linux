@@ -1,0 +1,54 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0xe6af07fa, "module_layout" },
+	{ 0xa46c2bd8, "i2c_del_driver" },
+	{ 0x37bf01f3, "i2c_register_driver" },
+	{ 0x91715312, "sprintf" },
+	{ 0xd7258a3c, "dev_warn" },
+	{ 0x5d2f1135, "device_create_file" },
+	{ 0xf1f77788, "devm_rtc_device_register" },
+	{ 0x2ea2c95c, "__x86_indirect_thunk_rax" },
+	{ 0x6c29e62, "__dynamic_dev_dbg" },
+	{ 0x356461c8, "rtc_time64_to_tm" },
+	{ 0xf7340ca9, "i2c_transfer" },
+	{ 0xdb7305a1, "__stack_chk_fail" },
+	{ 0xf9c388e5, "dev_err" },
+	{ 0x67c6a5ce, "i2c_transfer_buffer_flags" },
+	{ 0xbdfb6dbb, "__fentry__" },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=";
+
+MODULE_ALIAS("of:N*T*Cdallas,ds1672");
+MODULE_ALIAS("of:N*T*Cdallas,ds1672C*");
+MODULE_ALIAS("i2c:ds1672");
+
+MODULE_INFO(srcversion, "CA4984EF533EE2346DEF290");
+MODULE_INFO(rhelversion, "8.0");

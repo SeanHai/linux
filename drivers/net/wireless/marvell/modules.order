@@ -1,0 +1,5 @@
+kernel/drivers/net/wireless/marvell/mwifiex/mwifiex.ko
+kernel/drivers/net/wireless/marvell/mwifiex/mwifiex_sdio.ko
+kernel/drivers/net/wireless/marvell/mwifiex/mwifiex_pcie.ko
+kernel/drivers/net/wireless/marvell/mwifiex/mwifiex_usb.ko
+kernel/drivers/net/wireless/marvell/mwl8k.ko

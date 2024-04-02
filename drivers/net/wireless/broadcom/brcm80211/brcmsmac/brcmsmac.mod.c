@@ -1,0 +1,182 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0xe6af07fa, "module_layout" },
+	{ 0x2d3385d3, "system_wq" },
+	{ 0xc1f30fe4, "ieee80211_rx_irqsafe" },
+	{ 0x31ee12ea, "kmalloc_caches" },
+	{ 0xd2b09ce5, "__kmalloc" },
+	{ 0xffde41e8, "bcma_pmu_spuravoid_pllupdate" },
+	{ 0x1ed8b599, "__x86_indirect_thunk_r8" },
+	{ 0xf5284f7e, "debugfs_create_dir" },
+	{ 0x58388972, "pv_lock_ops" },
+	{ 0xc7f4b92, "single_open" },
+	{ 0x4f4636a, "bcma_host_pci_down" },
+	{ 0x4677c3c8, "bcma_chipco_pll_write" },
+	{ 0x1906648e, "brcmu_boardrev_str" },
+	{ 0x985ca3e0, "single_release" },
+	{ 0x83bdf59a, "brcmu_pkt_buf_get_skb" },
+	{ 0xb3635b01, "_raw_spin_lock_bh" },
+	{ 0xba5b7eb9, "gpio_to_desc" },
+	{ 0xc1c794e, "delayed_work_timer_fn" },
+	{ 0x6b486a75, "ieee80211_beacon_get_tim" },
+	{ 0xdf566a59, "__x86_indirect_thunk_r9" },
+	{ 0xc41033c1, "seq_printf" },
+	{ 0xad27f361, "__warn_printk" },
+	{ 0x81b1b255, "cancel_work_sync" },
+	{ 0x9b7fe4d4, "__dynamic_pr_debug" },
+	{ 0x448eac3e, "kmemdup" },
+	{ 0xc29957c3, "__x86_indirect_thunk_rcx" },
+	{ 0x151d7955, "ieee80211_unregister_hw" },
+	{ 0xe8663ae6, "ieee80211_channel_to_frequency" },
+	{ 0xe6672d2b, "__dev_kfree_skb_any" },
+	{ 0x403f9529, "gpio_request_one" },
+	{ 0xeae3dfd6, "__const_udelay" },
+	{ 0x4cc8f9c8, "init_timer_key" },
+	{ 0x3ac0564f, "bcma_host_pci_up" },
+	{ 0xe2d2e91f, "freq_reg_info" },
+	{ 0xeddfd55a, "dma_free_attrs" },
+	{ 0xb03676a8, "debugfs_create_file" },
+	{ 0xbf420674, "wiphy_rfkill_start_polling" },
+	{ 0x97651e6c, "vmemmap_base" },
+	{ 0x91715312, "sprintf" },
+	{ 0x5d11132b, "debugfs_remove_recursive" },
+	{ 0x4b94a99b, "seq_read" },
+	{ 0x16e9a4fd, "skb_unlink" },
+	{ 0x2148e648, "bcma_chipco_pll_maskset" },
+	{ 0xe2d5255a, "strcmp" },
+	{ 0xf1866b92, "ieee80211_stop_queues" },
+	{ 0x16500d9a, "of_led_classdev_register" },
+	{ 0x848be64a, "ieee80211_stop_queue" },
+	{ 0xd9a5ea54, "__init_waitqueue_head" },
+	{ 0x7e526bfa, "__x86_indirect_thunk_r10" },
+	{ 0xfb578fc5, "memset" },
+	{ 0xb5a8d234, "cancel_delayed_work" },
+	{ 0xf9c388e5, "dev_err" },
+	{ 0x3812050a, "_raw_spin_unlock_irqrestore" },
+	{ 0x7e431c15, "cordic_calc_iq" },
+	{ 0x37befc70, "jiffies_to_msecs" },
+	{ 0x194811f6, "ieee80211_alloc_hw_nm" },
+	{ 0x27e1a049, "printk" },
+	{ 0x4c9d28b0, "phys_base" },
+	{ 0xd4cf92da, "ieee80211_wake_queues" },
+	{ 0x94f915c9, "bcma_chipco_regctl_maskset" },
+	{ 0xe7b00dfb, "__x86_indirect_thunk_r13" },
+	{ 0xfaef0ed, "__tasklet_schedule" },
+	{ 0xa1c76e0a, "_cond_resched" },
+	{ 0x9166fada, "strncpy" },
+	{ 0x5a921311, "strncmp" },
+	{ 0x1aa6f7d9, "dma_direct_map_page" },
+	{ 0x80d50279, "dma_alloc_attrs" },
+	{ 0x5def83f9, "skb_push" },
+	{ 0x505f0e10, "dev_crit" },
+	{ 0xabec451b, "wiphy_apply_custom_regulatory" },
+	{ 0x9545af6d, "tasklet_init" },
+	{ 0xa6248c0d, "bcma_core_set_clockmode" },
+	{ 0xec460791, "gpiod_direction_output_raw" },
+	{ 0xd6b8e852, "request_threaded_irq" },
+	{ 0xcdbd7202, "__bcma_driver_register" },
+	{ 0x955c2e4e, "skb_pull" },
+	{ 0x5ee2df37, "wiphy_rfkill_stop_polling" },
+	{ 0xb8abb36c, "ieee80211_proberesp_get" },
+	{ 0xb5a7cb11, "ieee80211_queue_delayed_work" },
+	{ 0xfe487975, "init_wait_entry" },
+	{ 0xfe9a6ccc, "wiphy_to_ieee80211_hw" },
+	{ 0x82072614, "tasklet_kill" },
+	{ 0xcebd3061, "bcma_host_pci_irq_ctl" },
+	{ 0x7cd8d75e, "page_offset_base" },
+	{ 0x56754ef4, "ieee80211_stop_tx_ba_cb_irqsafe" },
+	{ 0xea4805c2, "skb_queue_tail" },
+	{ 0x15600427, "bcma_chipco_gpio_control" },
+	{ 0xd0edfd15, "dma_direct_unmap_page" },
+	{ 0xe6478472, "_dev_info" },
+	{ 0xabd1cd60, "bcma_core_is_enabled" },
+	{ 0xae5a134e, "bcma_core_enable" },
+	{ 0x49c41a57, "_raw_spin_unlock_bh" },
+	{ 0xdb7305a1, "__stack_chk_fail" },
+	{ 0xd252a816, "wiphy_rfkill_set_hw_state" },
+	{ 0xd0cfb5e2, "bcma_driver_unregister" },
+	{ 0x36f9dba, "bcma_chipco_gpio_out" },
+	{ 0x9a68601e, "ieee80211_tx_status_irqsafe" },
+	{ 0x1000e51, "schedule" },
+	{ 0x8ddd8aad, "schedule_timeout" },
+	{ 0xc5c92ee, "kfree_skb" },
+	{ 0x2ea2c95c, "__x86_indirect_thunk_rax" },
+	{ 0xbfdcb43a, "__x86_indirect_thunk_r11" },
+	{ 0xe1f4fcf5, "pci_read_config_dword" },
+	{ 0xb678366f, "int_sqrt" },
+	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0xce935186, "kmem_cache_alloc_trace" },
+	{ 0xdbf17652, "_raw_spin_lock" },
+	{ 0x51760917, "_raw_spin_lock_irqsave" },
+	{ 0x80deca47, "ieee80211_wake_queue" },
+	{ 0x3eeb2322, "__wake_up" },
+	{ 0xb45d962b, "__ieee80211_get_radio_led_name" },
+	{ 0x8c26d495, "prepare_to_wait_event" },
+	{ 0x7b06b0d, "ieee80211_restart_hw" },
+	{ 0xfe990052, "gpio_free" },
+	{ 0xba221020, "ieee80211_register_hw" },
+	{ 0x84a914a7, "led_classdev_unregister" },
+	{ 0x291eb36, "seq_lseek" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x40c8dc6, "regulatory_hint" },
+	{ 0xdfd819c0, "bcma_chipco_gpio_outen" },
+	{ 0x69acdf38, "memcpy" },
+	{ 0x89318f48, "gpiod_set_raw_value" },
+	{ 0xf82eea4a, "request_firmware" },
+	{ 0x74c134b9, "__sw_hweight32" },
+	{ 0x275d5ec2, "ieee80211_free_hw" },
+	{ 0x92540fbf, "finish_wait" },
+	{ 0x488a0ef1, "skb_dequeue" },
+	{ 0xd7258a3c, "dev_warn" },
+	{ 0x121da905, "queue_work_on" },
+	{ 0x28318305, "snprintf" },
+	{ 0x7f02188f, "__msecs_to_jiffies" },
+	{ 0xe3fffae9, "__x86_indirect_thunk_rbp" },
+	{ 0x625ce867, "brcmu_pkt_buf_free_skb" },
+	{ 0x9e2eaa21, "bcma_chipco_chipctl_maskset" },
+	{ 0x3fa74627, "devm_kmalloc" },
+	{ 0x92287153, "bcma_chipco_get_alp_clock" },
+	{ 0x63005ca1, "bcma_core_pci_power_save" },
+	{ 0xb88b1382, "bcma_core_disable" },
+	{ 0x84277b2a, "release_firmware" },
+	{ 0x69e1549c, "ieee80211_start_tx_ba_cb_irqsafe" },
+	{ 0x36b3d463, "dma_ops" },
+	{ 0xc1514a3b, "free_irq" },
+	{ 0xcb52e4f2, "ieee80211_queue_stopped" },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=mac80211,bcma,brcmutil,cfg80211,cordic";
+
+MODULE_ALIAS("bcma:m04BFid0812rev11cl*");
+MODULE_ALIAS("bcma:m04BFid0812rev17cl*");
+MODULE_ALIAS("bcma:m04BFid0812rev18cl*");
+
+MODULE_INFO(srcversion, "4BEB6B7AE55429E2BCAC16F");
+MODULE_INFO(rhelversion, "8.0");

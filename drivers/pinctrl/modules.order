@@ -1,0 +1,7 @@
+kernel/drivers/pinctrl/intel/pinctrl-intel.ko
+kernel/drivers/pinctrl/intel/pinctrl-cannonlake.ko
+kernel/drivers/pinctrl/intel/pinctrl-denverton.ko
+kernel/drivers/pinctrl/intel/pinctrl-geminilake.ko
+kernel/drivers/pinctrl/intel/pinctrl-lewisburg.ko
+kernel/drivers/pinctrl/intel/pinctrl-sunrisepoint.ko
+kernel/drivers/pinctrl/pinctrl-amd.ko

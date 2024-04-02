@@ -1,0 +1,2 @@
+kernel/drivers/net/ethernet/cavium/liquidio/liquidio.ko
+kernel/drivers/net/ethernet/cavium/liquidio/liquidio_vf.ko

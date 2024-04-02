@@ -1,0 +1,4 @@
+kernel/drivers/mfd/mfd-core.ko
+kernel/drivers/mfd/intel-lpss.ko
+kernel/drivers/mfd/intel-lpss-pci.ko
+kernel/drivers/mfd/intel-lpss-acpi.ko

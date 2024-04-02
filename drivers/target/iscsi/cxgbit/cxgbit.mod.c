@@ -1,0 +1,166 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0xe6af07fa, "module_layout" },
+	{ 0xb81bf6c5, "alloc_pages_current" },
+	{ 0x2d3385d3, "system_wq" },
+	{ 0xd95992d8, "cxgbi_ppm_ppods_reserve" },
+	{ 0x7261d8dd, "iscsit_immediate_queue" },
+	{ 0xbb8c805, "dma_direct_unmap_sg" },
+	{ 0x31ee12ea, "kmalloc_caches" },
+	{ 0x3b8a9a99, "iscsit_process_scsi_cmd" },
+	{ 0xd2b09ce5, "__kmalloc" },
+	{ 0xe8f008ca, "cxgb4_clip_release" },
+	{ 0xf888ca21, "sg_init_table" },
+	{ 0x244642a2, "__kfree_skb" },
+	{ 0x9f7a6c57, "skb_seq_read" },
+	{ 0xc1ea042a, "cxgb4_l2t_release" },
+	{ 0x7300a5ca, "iscsit_unregister_transport" },
+	{ 0x3b7c08e8, "iscsit_aborted_task" },
+	{ 0x76086751, "iscsi_target_check_login_request" },
+	{ 0x195b9e7e, "__put_devmap_managed_page" },
+	{ 0x58388972, "pv_lock_ops" },
+	{ 0xcfaa5add, "target_put_sess_cmd" },
+	{ 0x6fe60ac1, "ipv6_chk_addr" },
+	{ 0x82584bc, "cxgb4_create_server6" },
+	{ 0x67d45d41, "iscsi_change_param_sprintf" },
+	{ 0x56b62201, "cxgbi_ppm_ppod_release" },
+	{ 0xbc1e02f3, "__iscsit_check_dataout_hdr" },
+	{ 0xe7430d5f, "iscsit_reject_cmd" },
+	{ 0xfc33ccad, "dst_release" },
+	{ 0xb3635b01, "_raw_spin_lock_bh" },
+	{ 0xba0bbc41, "iscsit_handle_logout_cmd" },
+	{ 0x4d9ddba7, "iscsit_handle_snack" },
+	{ 0x2d9fe861, "iscsit_set_unsoliticed_dataout" },
+	{ 0xa1f9a134, "__x86_indirect_thunk_rsi" },
+	{ 0x9b7fe4d4, "__dynamic_pr_debug" },
+	{ 0x87b8798d, "sg_next" },
+	{ 0xdbc4c2c4, "cxgb4_free_stid" },
+	{ 0xd0fe8d51, "sg_pcopy_from_buffer" },
+	{ 0xb4568c2f, "iscsit_check_dataout_hdr" },
+	{ 0x676a11a9, "cxgb4_unregister_uld" },
+	{ 0xa6093a32, "mutex_unlock" },
+	{ 0x821aac91, "neigh_destroy" },
+	{ 0x49705dee, "cxgb4_port_chan" },
+	{ 0xb348a850, "ex_handler_refcount" },
+	{ 0x96e6d2d0, "iscsit_setup_text_cmd" },
+	{ 0x15ba50a6, "jiffies" },
+	{ 0x432a23e5, "iscsit_setup_scsi_cmd" },
+	{ 0x317d3851, "alloc_skb_with_frags" },
+	{ 0x8df939f1, "__neigh_event_send" },
+	{ 0xf34332f0, "iscsi_find_param_from_key" },
+	{ 0xd9a5ea54, "__init_waitqueue_head" },
+	{ 0x4660d2e, "cxgb4_remove_tid" },
+	{ 0xed95c959, "cxgb4_ofld_send" },
+	{ 0xcb38818a, "iscsit_allocate_cmd" },
+	{ 0x3fb7242d, "iscsit_response_queue" },
+	{ 0x6ef1e985, "skb_abort_seq_read" },
+	{ 0xf9019aa0, "kstrtou8" },
+	{ 0xf7d6636f, "current_task" },
+	{ 0x38b2bac3, "cxgbi_ppm_init" },
+	{ 0xd2cc9180, "iscsit_process_text_cmd" },
+	{ 0x3199ead6, "iscsit_setup_nop_out" },
+	{ 0x27e1a049, "printk" },
+	{ 0x6dbb7a32, "iscsit_sequence_cmd" },
+	{ 0xe1537255, "__list_del_entry_valid" },
+	{ 0x302cd317, "skb_prepare_seq_read" },
+	{ 0xc5f0fa4c, "cxgb4_alloc_stid" },
+	{ 0x255ab30f, "cxgb_get_4tuple" },
+	{ 0x262e823a, "wait_for_completion_interruptible" },
+	{ 0x72e972cc, "cxgb4_port_viid" },
+	{ 0xc66e39ff, "iscsit_queue_rsp" },
+	{ 0x240ec29e, "cxgb4_l2t_send" },
+	{ 0xa1c76e0a, "_cond_resched" },
+	{ 0x71df4aa3, "set_cpus_allowed_ptr" },
+	{ 0x41aed6e7, "mutex_lock" },
+	{ 0x498543ef, "skb_store_bits" },
+	{ 0x48ac4968, "cxgb_find_route6" },
+	{ 0x1897cf46, "iscsit_free_cmd" },
+	{ 0xfda9581f, "prandom_u32" },
+	{ 0xed946a48, "init_net" },
+	{ 0x68f31cbd, "__list_add_valid" },
+	{ 0xfe487975, "init_wait_entry" },
+	{ 0xf89c9227, "vlan_dev_real_dev" },
+	{ 0xa7c4df50, "cxgb_find_route" },
+	{ 0x16c5f651, "cxgb4_clip_get" },
+	{ 0xc7f2def5, "iscsit_check_dataout_payload" },
+	{ 0x61b90370, "__alloc_skb" },
+	{ 0x26d66e85, "iscsit_find_cmd_from_itt" },
+	{ 0xc29764d3, "iscsit_increment_maxcmdsn" },
+	{ 0x49c41a57, "_raw_spin_unlock_bh" },
+	{ 0xd1e4ec46, "queue_delayed_work_on" },
+	{ 0x73cc45b5, "cxgb4_remove_server" },
+	{ 0xdb7305a1, "__stack_chk_fail" },
+	{ 0x1000e51, "schedule" },
+	{ 0xc5c92ee, "kfree_skb" },
+	{ 0x6b2dc060, "dump_stack" },
+	{ 0x2ea2c95c, "__x86_indirect_thunk_rax" },
+	{ 0x47d0d1ab, "cxgbi_ppm_release" },
+	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0xa754d01c, "cxgb4_register_uld" },
+	{ 0xce935186, "kmem_cache_alloc_trace" },
+	{ 0xdbf17652, "_raw_spin_lock" },
+	{ 0x8602791, "iscsit_process_nop_out" },
+	{ 0x3eeb2322, "__wake_up" },
+	{ 0xb3f7646e, "kthread_should_stop" },
+	{ 0x50ee5c07, "cxgb4_best_aligned_mtu" },
+	{ 0x8c26d495, "prepare_to_wait_event" },
+	{ 0x4456d5f, "iscsit_register_transport" },
+	{ 0x73d4a363, "iscsit_build_datain_pdu" },
+	{ 0x37a0cba, "kfree" },
+	{ 0xa46f2f1b, "kstrtouint" },
+	{ 0x250ffaa1, "dma_direct_map_sg" },
+	{ 0x24cd3cbc, "iscsit_find_cmd_from_itt_or_dump" },
+	{ 0x66f06625, "cxgb4_tp_smt_idx" },
+	{ 0xf0003123, "__ip_dev_find" },
+	{ 0x4b0b56de, "cxgb4_port_idx" },
+	{ 0x92540fbf, "finish_wait" },
+	{ 0xde1342e9, "iscsit_build_r2ts_for_cmd" },
+	{ 0xc03b28f1, "iscsit_add_cmd_to_immediate_queue" },
+	{ 0x29361773, "complete" },
+	{ 0xaabf1c04, "cxgb4_pktgl_to_skb" },
+	{ 0x8ee1b4e5, "__napi_alloc_skb" },
+	{ 0x4d1ff60a, "wait_for_completion_timeout" },
+	{ 0x28c06d05, "iscsit_handle_task_mgt_cmd" },
+	{ 0x64ecb142, "iscsit_add_reject" },
+	{ 0x317cc4af, "skb_copy_bits" },
+	{ 0xd542439, "__ipv6_addr_type" },
+	{ 0x36b3d463, "dma_ops" },
+	{ 0xc7bcaaed, "cxgb4_l2t_get" },
+	{ 0x2a6bb061, "__put_page" },
+	{ 0xdcf5a916, "cxgb4_create_server" },
+	{ 0xf1e63929, "devmap_managed_key" },
+	{ 0x5d465d16, "cxgbi_ppm_make_ppod_hdr" },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=libcxgb,iscsi_target_mod,cxgb4,target_core_mod";
+
+
+MODULE_INFO(srcversion, "8D1522B10296E2FC289DBC9");
+MODULE_INFO(rhelversion, "8.0");

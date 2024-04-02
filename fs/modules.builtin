@@ -1,0 +1,11 @@
+kernel/fs/binfmt_script.ko
+kernel/fs/autofs/autofs4.ko
+kernel/fs/configfs/configfs.ko
+kernel/fs/efivarfs/efivarfs.ko
+kernel/fs/exportfs/exportfs.ko
+kernel/fs/nls/nls_base.ko
+kernel/fs/nls/nls_cp437.ko
+kernel/fs/nls/nls_ascii.ko
+kernel/fs/pstore/pstore.ko
+kernel/fs/quota/quota_v2.ko
+kernel/fs/quota/quota_tree.ko

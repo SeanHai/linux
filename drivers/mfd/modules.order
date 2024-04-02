@@ -1,0 +1,5 @@
+kernel/drivers/mfd/sm501.ko
+kernel/drivers/mfd/lpc_sch.ko
+kernel/drivers/mfd/lpc_ich.ko
+kernel/drivers/mfd/vx855.ko
+kernel/drivers/mfd/viperboard.ko
